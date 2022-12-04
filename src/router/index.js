@@ -36,12 +36,12 @@ const routes = [
             {
                 path: "/ingredients",
                 name: "ingredients",
-                component: Ingredients
+                component: Ingredients,
             },
             {
                 path: "/by-ingredient/:ingredient",
                 name: "byIngredient",
-                component: MealsByIngredient
+                component: MealsByIngredient,
             },
             {
                 path: "/meal/:id",
