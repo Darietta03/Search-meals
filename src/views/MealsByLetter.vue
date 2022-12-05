@@ -1,7 +1,12 @@
 <template>
 
-        <div class="flex justify-center gap-2 mt-2">
-         <router-link :to="{name: 'byLetter', params: {letter}}" v-for="letter of letters" :key="letter">
+        <div class="flex justify-center gap-2 mt-2 text-wrap">
+         <router-link 
+          :to="{name: 'byLetter', params: {letter}}" 
+          v-for="letter of letters" 
+          :key="letter"
+          class="mt-8 w-2 h-2 flex item-center justify-center hover:text-red-300 hover:scale-105 transition-all"
+         >
            {{ letter }}
          </router-link> 
         </div>
